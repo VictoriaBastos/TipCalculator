@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <section class="container">
+        <h1>Tip Calculator</h1>   
+        <form class="valuesBill">
+            <ul>
+                <li>
+                    <label for="totalAmount">Amount</label><br>
+                    <input type="number" id="totalAmount"  placeholder="Your bill">
+                </li>
+                <li>
+                    <label for="tipAmount">Tip ( % )</label><br>
+                    <input type="number" id="tipPercentage"  min="0" max="100" placeholder="Percentage">
+                </li>
+                <li>
+                    <label for="split">Split</label><br>
+                    <input type="number" id="split" min="0" max="6" placeholder="Nº of people"><br>
+                </li>
+            </ul>
+            
+            <input type="button" id="send" value="Calculate">
+        </form>
+
+        <div class="totalBill">
+            <h2 id="valueTotal">Total</h2>
+            <!-- p id="valueTotal"></p-->
+        </div>
+        <div class="resultBill">
+            <ul>
+                <li>
+                    <p id="totalPerPerson">Amount per person:</p>
+                </li>
+                <li>
+                    <p id="tipPerPerson">Tip per person:</p>
+                </li>
+                <li>
+                    <h3 id="totalIndividual">Total per person:</h3>    
+                 </li>  
+            </ul>
+        </div>  
+    </section>
+    <footer>
+        <p>&copy;VictoriaRezBas</p>
+    </footer>    
+
+    <script src="script.js" rel="script"></script>
+</body>
+</html>

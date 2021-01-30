@@ -1,0 +1,72 @@
+
+* {
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #F7C258 ;
+    font-family: 'Open Sans', sans-serif;
+    color:#ffffff;
+    display:flexbox;
+}
+
+section.container{
+    width:400px;
+    justify-content: center;
+    margin:auto;
+    padding: 20px;
+    background-color:#0E5E62;
+    border: 0.5em solid hsl(2, 92%, 64%);
+    border-radius: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}
+
+@media only screen and (max-width: 600px){
+    section.mainBox{
+        width:80%;
+    }
+}
+
+h1{
+    text-align: center;
+    font-size: 32px;
+    margin:0;
+}
+
+ul li{
+    list-style: none;
+    margin: 20px 0;
+}
+
+input{
+    padding:3px;
+    border: solid 2px rgba(0, 0, 0, 0.452);
+    border-radius: 5px;
+    width:40%;
+    color: rgba(0, 0, 0, 0.623);
+}
+
+input#send{
+    display:block;
+    justify-content: center;
+    background-color: #F7C258;
+    border-radius: 2px solid hsl(2,92%,64%);
+    color:rgb(41, 39, 39);;
+    width:100px;
+    height: 30px;
+    margin:auto;
+}
+
+div.totalBill{
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    margin:10px 0;
+}
+
+footer{
+    text-align: center;
+    color:#111111;
+}
+
+
